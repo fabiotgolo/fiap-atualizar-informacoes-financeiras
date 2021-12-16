@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const Financeiro = require("./model/financeiro");
 const auth = require("./middleware/auth");
 const urlbd = "mongodb+srv://fabiotg:Ba123456@clustercliente.zbihk.mongodb.net/database?retryWrites=true&w=majority";
+//Professor, mantive o endereço aqui porque esse usuário e senha são provisórios, depois da avaliação vou deletar.
 
 mongoose.connect(urlbd, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('Conectado ao DB'))
