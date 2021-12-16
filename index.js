@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const Financeiro = require("./model/financeiro");
 const auth = require("./middleware/auth");
-const urlbd = "connection string";
+const urlbd = "mongodb+srv://fabiotg:Ba123456@clustercliente.zbihk.mongodb.net/database?retryWrites=true&w=majority";
 
 mongoose.connect(urlbd, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('Conectado ao DB'))
@@ -63,5 +63,5 @@ app.use((req, res) => {
 })
 
 
-app.listen(3000, () => console.log('Rodando na porta 3000'))
+app.listen(4020, () => console.log('Rodando na porta 4020'));
 
